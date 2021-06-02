@@ -28,7 +28,6 @@ function renderPlaces(places) {
       `latitude: ${latitude}; longitude: ${longitude};`
     );
     model.setAttribute("gltf-model", "./assets/magnemite/scene.gltf");
-    model.setAttribute("scale", "0.5 0.5 0.5");
 
     model.addEventListener("loaded", () => {
       window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
