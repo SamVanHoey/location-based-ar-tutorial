@@ -8,8 +8,8 @@ function staticLoadPlaces() {
     {
       name: "Magnemite",
       location: {
-        lat: 44.49647,
-        lng: 11.32018,
+        lat: 51.229647,
+        lng: 4.4019115,
       },
     },
   ];
@@ -28,8 +28,6 @@ function renderPlaces(places) {
       `latitude: ${latitude}; longitude: ${longitude};`
     );
     model.setAttribute("gltf-model", "./assets/magnemite/scene.gltf");
-    model.setAttribute("rotation", "0 180 0");
-    model.setAttribute("animation-mixer", "");
     model.setAttribute("scale", "0.5 0.5 0.5");
 
     model.addEventListener("loaded", () => {
