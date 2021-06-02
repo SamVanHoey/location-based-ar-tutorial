@@ -14,13 +14,13 @@
       vr-mode-ui="enabled: false"
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-text
-        value="Follow me"
-        look-at="[gps-camera]"
-        scale="50 50 50"
+      ><a-entity
+        gltf-model="./assets/magnemite/scene.gltf"
+        rotation="0 180 0"
         gps-entity-place="latitude: 51.229987; longitude: 4.401891;"
-      ></a-text>
+        animation-mixer
+      />
+
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
