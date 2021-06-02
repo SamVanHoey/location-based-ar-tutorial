@@ -17,22 +17,34 @@
     >
       <a-assets>
         <img id="marker" src="./assets/map-marker.png" />
+        <img id="arrow" src="./assets/Arrow_right.png" />
+        <img id="stairs" src="./assets/Arrow_topright.png" />
+        <img id="start" src="./assets/Start.png" />
       </a-assets>
 
       <a-image
-        src="#marker"
-        gps-entity-place="latitude: 51.229429; longitude: 4.401755;"
+        width="2"
+        height="3"
+        src="#start"
+        gps-entity-place="latitude: 51.229528; longitude: 4.401740;"
+        position="0 2 0"
+        scale="2 3 1"
       ></a-image>
       <a-image
-        src="#marker"
-        gps-entity-place="latitude: 51.229731; longitude: 4.401755;"
+        width="2"
+        height="3"
+        src="#arrow"
+        gps-entity-place="latitude: 51.229772; longitude: 4.401764;"
+        position="0 2 0"
+        scale="2 3 1"
       ></a-image>
       <a-image
         width="2"
         height="3"
         src="#marker"
-        gps-entity-place="latitude: 51.230135; longitude:4.401924;"
+        gps-entity-place="latitude: 51.229975; longitude:4.401882;"
         position="0 2 0"
+        scale="2 3 1"
       ></a-image>
 
       <a-camera gps-camera rotation-reader> </a-camera>
