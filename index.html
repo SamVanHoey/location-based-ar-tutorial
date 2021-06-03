@@ -28,18 +28,20 @@
         position="0 2 0"
         scale="1 3 1"
       ></a-image>
+
       <a-image
         src="#marker"
         gps-entity-place="latitude: 51.242963; longitude: 4.090666;"
         position="0 2 0"
         scale="2 3 1"
       ></a-image>
-      <a-image
-        src="#marker"
+
+      <a-entity
+        gltf-model="./assets/magnemite/scene.gltf"
+        rotation="0 180 0"
         gps-entity-place="latitude: 51.242761; longitude: 4.090173;"
-        position="0 2 0"
-        scale="2 3 1"
-      ></a-image>
+        animation-mixer
+      />
 
       <a-camera
         ook-controls-enabled="false"
