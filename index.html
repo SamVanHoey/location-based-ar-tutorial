@@ -20,6 +20,8 @@
         <img id="arrow" src="./assets/Arrow_right.png" />
         <img id="stairs" src="./assets/Arrow_topright.png" />
         <img id="start" src="./assets/Start.png" />
+        <a-asset-item id="arrow-obj" src="./assets/Arrow.obj"></a-asset-item>
+        <a-asset-item id="arrow-mtl" src="./assets/Arrow.mtl"></a-asset-item>
       </a-assets>
 
       <a-text
@@ -28,13 +30,10 @@
         scale="5 10 10"
         gps-entity-place="latitude: 51.229527; longitude: 4.401710;"
       ></a-text>
-
-      <a-text
-        value="Follow me"
-        look-at="[gps-camera]"
-        scale="5 10 10"
+      <a-entity
+        obj-model="obj: #arrow-obj; mtl: #arrow-mtl"
         gps-entity-place="latitude: 51.229699; longitude: 4.401738;"
-      ></a-text>
+      ></a-entity>
 
       <a-text
         value="Follow me now"
