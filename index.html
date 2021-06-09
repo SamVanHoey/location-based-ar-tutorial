@@ -33,6 +33,8 @@
         <a-asset-item id="start-mtl" src="./assets/start.mtl"></a-asset-item>
       </a-assets>
 
+      <a-entity gltf-model="./assets/follow.gltf" />
+
       <a-entity
         position="0 4 0"
         scale="0.005 0.005 0.005"
@@ -50,13 +52,13 @@
         position="0 7 0"
         scale="0.01 0.01 0.01"
         obj-model="obj: #follow-obj; mtl: #follow-mtl"
-        gps-entity-place="latitude:  51.229838; longitude: 4.401778;"
+        gps-entity-place="latitude: 51.229838; longitude: 4.401778;"
       ></a-entity>
       <a-entity
         position="0 7 0"
         scale="0.01 0.01 0.01"
         obj-model="obj: #follow-obj; mtl: #follow-mtl"
-        gps-entity-place="latitude:  51.229978; longitude: 4.401848;"
+        gps-entity-place="latitude: 51.229978; longitude: 4.401848;"
       ></a-entity>
 
       <a-entity
@@ -69,7 +71,7 @@
       <a-camera
         look-controls-enabled="false"
         arjs-look-controls="smoothingFactor: 0.1"
-        gps-camera="gpsMinDistance: 2; maxDistance: 20; minDistance:  3"
+        gps-camera="gpsMinDistance: 2; maxDistance: 20; minDistance: 5"
         rotation-reader
       >
       </a-camera>
